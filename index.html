@@ -139,6 +139,7 @@
         <option value="gato">🐱 Gato</option>
         <option value="ave">🦜 Ave</option>
         <option value="roedor">🐹 Roedor</option>
+        <option value="pterodactilo">🦕 Pterodáctilo</option>
       </select>
       <select id="genero">
         <option value="todos">Cualquier género</option>
@@ -180,6 +181,10 @@
       roedor: {
         macho: ['Coco', 'Gusanito', 'Nibbles', 'Stuart', 'Remy', 'Quesito', 'Bolt', 'Pipo', 'Tostada'],
         hembra: ['Canela', 'Almendra', 'Nuez', 'Muffin', 'Galleta', 'Pompona', 'Chispita', 'Avellana', 'Copito', 'Trufa']
+      },
+      pterodactilo: {
+        macho: ['Ptero', 'Rex', 'Sky', 'Draco', 'Wing', 'Cloud', 'Storm', 'Aero', 'Titan', 'Flap', 'Nimbus', 'Zephyr', 'Orion', 'Bruno', 'Spike'],
+        hembra: ['Pteri', 'Luna', 'Aurora', 'Nube', 'Estela', 'Skyler', 'Ariel', 'Daisy', 'Iris', 'Celeste', 'Misty', 'Nova', 'Stella', 'Diana', 'Ava']
       }
     };
 
@@ -205,7 +210,7 @@
       void elNombre.offsetWidth;
       elNombre.classList.add('pop');
 
-      const emojis = { perro: '🐶', gato: '🐱', ave: '🦜', roedor: '🐹' };
+      const emojis = { perro: '🐶', gato: '🐱', ave: '🦜', roedor: '🐹', pterodactilo: '🦕' };
       elInfo.textContent = `${emojis[tipo]} ${tipo.charAt(0).toUpperCase() + tipo.slice(1)} · ${genero}`;
     }
 
